@@ -1,0 +1,29 @@
+# Phase 1 Research Engine — Dependencies
+
+# Data storage
+duckdb>=0.10.0
+
+# Exchange data
+ccxt>=4.2.0
+
+# Reddit
+praw>=7.7.0
+
+# Twitter (choose one or both)
+snscrape>=0.7.0      # no-auth historical scraper
+tweepy>=4.14.0       # API v2 official client
+
+# Sentiment models
+vaderSentiment>=3.3.2
+transformers>=4.40.0  # for FinBERT
+torch>=2.1.0          # FinBERT backend (CPU is fine for Phase 1)
+
+# Data science
+pandas>=2.2.0
+numpy>=1.26.0
+scipy>=1.13.0
+statsmodels>=0.14.0   # OLS, Granger causality
+
+# Utils
+python-dotenv>=1.0.0  # load .env for API keys
+tqdm>=4.66.0          # progress bars
